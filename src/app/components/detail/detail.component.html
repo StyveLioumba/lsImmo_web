@@ -1,0 +1,31 @@
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-col">
+    <div class="lg:w-4/6 mx-auto">
+      <div class="rounded-lg h-64 overflow-hidden">
+        <img alt="content" class="object-cover object-center h-full w-full" src="{{apiURL}}/{{annonce.picture}}">
+      </div>
+      <div class="flex flex-col sm:flex-row mt-10">
+        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+
+          <img alt="testimonial" class="w-40 h-40 mb-2 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="{{apiURL}}/{{annonce.User.picture}}">
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">{{annonce.User.name}}</h2>
+            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+            <p class="text-base">{{annonce.User.email}}</p>
+            <p class="text-base">{{annonce.User.phone}}</p>
+          </div>
+        </div>
+        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+
+          <h3 class="text-gray-500 text-lg tracking-widest title-font mb-1">{{annonce.sector}}</h3>
+          <h2 class="title-font text-2xl font-medium text-gray-900 mb-3">{{annonce.title}}</h2>
+          <h3 class="text-gray-500 text-lg tracking-widest title-font mb-1">{{annonce.Type.name}}</h3>
+          <h2 class="tracking-widest text-xl title-font font-medium text-gray-400 mb-8">{{annonce.price}} €</h2>
+
+          <p class="leading-relaxed text-lg mb-4">{{annonce.description}}</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
